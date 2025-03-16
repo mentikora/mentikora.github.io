@@ -1,0 +1,112 @@
+{
+  "user": {
+    "name": "Roman",
+    "lastName": "Horobets",
+    "position": "Front-end Engineer",
+    "connect": [
+      { "email": "123@gmail.com" },
+      { "phone": "123456789" },
+      { "linkedin": "linkedin" },
+      { "github": "github" }
+    ]
+  },
+  "summaryOfExperience": [
+    "Experience in defining requirements, designing, implementing, and delivering complex front-end, and web applications using a variety of technics and technologies",
+    "Solid expertise in React",
+    "Strong experience in Front-end Software development using a common stack of technologies: HTML5, CSS3, JavaScript, TypeScript, React, Bootstrap, Material",
+    "Practice experience in CSS preprocessors as SASS, SCSS",
+    "Solid experience in CSS media-queries and HTML/CSS responsive layouts",
+    "Experience in writing unit tests with Jest",
+    "Practice experience in using VCS (GIT)",
+    "Good knowledge of Redux, Redux-saga, React Query",
+    "Deep knowledge of build tools such as npm, Webpack, Vite",
+    "Good skills in Photoshop, Figma, and other graphic editing software",
+    "Basic knowledge of developing progressive web applications (PWA)"
+  ],
+  "technicalSkills": [
+    "HTML",
+    "CSS",
+    "SAS/LESS",
+    "BEM/ATOMIC/CSS modules",
+    "JavaScript",
+    "React",
+    "TypeScript",
+    "Jest",
+    "Bootstrap/Material UI/Bulma",
+    "Adaptive & Responsive Design",
+    "Git/GitFlow"
+  ],
+  "cources": [
+    {
+      "name": "Cursor Education",
+      "date": "2016"
+    },
+    {
+      "name": "MongoDB Basics",
+      "date": "2019"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Avenga",
+      "summary": "summary",
+      "position": "Software Engineer",
+      "date": {
+        "from": "October 2021",
+        "to": "Present"
+      },
+      "projects": [
+        {
+          "name": "CDR",
+          "summary": "Admin dashboard for managing files, and roles for medical studies.",
+          "responsibilities": [
+            "Project architecture: POC -> MVP -> Production",
+            "Creation of a working version of the product based on business scenarios by TDD (test driven development)",
+            "Participated in the discussion and development of the UI/UX part of the project"
+          ],
+          "technologies": [
+            "React",
+            "React Query",
+            "Material-UI",
+            "Jest (react-testing-library + cucumber)",
+            "Python"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "",
+      "summary": "",
+      "position": "",
+      "date": {
+        "from": "",
+        "to": ""
+      },
+      "projects": [
+        {
+          "name": "",
+          "summary": "",
+          "responsibilities": ["1", "2"],
+          "technologies": ["1", "2"]
+        }
+      ]
+    },
+    {
+      "company": "",
+      "summary": "",
+      "position": "",
+      "date": {
+        "from": "",
+        "to": ""
+      },
+      "projects": [
+        {
+          "name": "",
+          "summary": "",
+          "responsibilities": ["1", "2"],
+          "technologies": ["1", "2"]
+        }
+      ]
+    }
+  ]
+}
