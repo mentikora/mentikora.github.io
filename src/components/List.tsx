@@ -1,11 +1,18 @@
+import { createElement } from "react";
+
 export const List = ({
-  title = "row",
+  heading: { as = "h2", title = "" },
   data,
-  type,
+  type = "row",
+  className = "",
 }: {
-  title: string;
   data: string[];
   type?: "row" | "column";
+  heading: {
+    title: string;
+    as?: "h2" | "h3" | "h4" | "h5" | "h6";
+  };
+  className?: string;
 }) => {
   if (!data.length) return null;
 
@@ -13,8 +20,8 @@ export const List = ({
 
   return (
     <div>
-      <h3>{title}</h3>
-      <ul className={cln}>
+      {createElement(as, null, title)}
+      <ul className={cln + className}>
         {data.map((item, index) => {
           return <li key={index}>{item}</li>;
         })}
