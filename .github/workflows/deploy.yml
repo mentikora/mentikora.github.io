@@ -3,12 +3,12 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main # Runs on direct pushes to main
+      - main
   pull_request:
     branches:
       - main
     types:
-      - closed # Runs when a PR is merged into main
+      - closed
 
 permissions:
   contents: write
@@ -38,4 +38,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist # Change to `build` if using Create React App
+          folder: dist
