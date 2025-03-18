@@ -1,15 +1,14 @@
-import React from 'react'
 import './styles.css'
 import { List } from './components'
-import cvData from './data/cv.json'
+import { CVData } from './data/cv'
 import { upperCaseFirstLetter } from './utils'
 
 function App() {
-  if (!cvData) {
+  if (!CVData) {
     return <p className="text-3xl font-bold underline">No data</p>
   }
 
-  const { user, summaryOfExperience, technicalSkills, workExperience } = cvData
+  const { user, summaryOfExperience, technicalSkills, workExperience } = CVData
 
   return (
     <div className="flex flex-col gap-4 font-display">

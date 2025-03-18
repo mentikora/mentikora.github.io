@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import App from '../App'
-import * as cvData from '../data/cv.json'
+import * as cvData from '../data/cv'
 
 vi.mock('../data/cv.json', async () => {
   const actual = await vi.importActual('../data/cv.json')
