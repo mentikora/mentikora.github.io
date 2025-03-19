@@ -177,4 +177,26 @@ export const CVData = {
       projects: [],
     },
   ],
+  additionalInfo: [
+    {
+      title: 'DEV Challenge, Online 2023)',
+      text: 'Participated in the final part of dev challenge in the JavaScript (hard) category',
+    },
+    {
+      title: 'DEV Challenge, Online 2022',
+      text: 'Participated in the pre-final part of dev challenge in the JavaScript (hard) category',
+    },
+    {
+      title: 'DEV Challenge 1101, KYIV (October 2018)',
+      text: 'Participated in the final part of dev challenge in the HTML/CSS category',
+    },
+    {
+      title: 'Course',
+      text: 'MongoDB Basics, 2019',
+    },
+    {
+      title: 'Course',
+      text: 'Cursor Education, 2016',
+    },
+  ],
 }

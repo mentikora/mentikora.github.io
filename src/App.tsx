@@ -8,7 +8,13 @@ function App() {
     return <p className="text-3xl font-bold underline">No data</p>
   }
 
-  const { user, summaryOfExperience, technicalSkills, workExperience } = CVData
+  const {
+    user,
+    summaryOfExperience,
+    technicalSkills,
+    workExperience,
+    additionalInfo,
+  } = CVData
 
   return (
     <div className="flex flex-col gap-4 font-display">
@@ -17,8 +23,12 @@ function App() {
           <h1 className="flex-grow">
             {user.name} {user.lastName}
           </h1>
-          <a>download</a>
-          <a>print</a>
+          <a href="#" className="hidden md:inline">
+            download
+          </a>
+          <a href="#" className="hidden md:inline">
+            print
+          </a>
         </div>
 
         <p className="text-gray-500">{user.position}</p>
@@ -95,6 +105,16 @@ function App() {
             )
           })}
         </div>
+      </div>
+
+      <div>
+        <h4 className="mb-2">Rest</h4>
+        {additionalInfo.map(({ title, text }) => (
+          <div>
+            <h5>{title}</h5>
+            <p>{text}</p>
+          </div>
+        ))}
       </div>
     </div>
   )
