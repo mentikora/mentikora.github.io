@@ -4,10 +4,10 @@ export const CVData = {
     lastName: 'Horobets',
     position: 'Front-end Engineer',
     connect: [
-      { email: '123@gmail.com' },
-      { phone: '123456789' },
-      { linkedin: 'linkedin' },
-      { github: 'github' },
+      { email: 'mentikorasan@gmail.com123@gmail.com' },
+      // { phone: '123456789' },
+      { linkedin: 'https://www.linkedin.com/in/roman-horobets-b9290366/' },
+      { github: 'https://github.com/mentikora' },
     ],
   },
   summaryOfExperience: [

@@ -32,7 +32,7 @@ function App() {
             <p key={index}>
               <span>{upperCaseFirstLetter(key)}: </span>
               <a href={value} target="_blank" rel="noopener noreferrer">
-                {value}
+                click
               </a>
             </p>
           )
