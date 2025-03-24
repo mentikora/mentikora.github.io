@@ -2,6 +2,7 @@ import './styles.css'
 import { List } from './components'
 import { CVData } from './data/cv'
 import { upperCaseFirstLetter } from './utils'
+import { Link } from './components/Link'
 
 function App() {
   if (!CVData) {
@@ -19,16 +20,22 @@ function App() {
   return (
     <div className="flex flex-col gap-4 font-display">
       <div>
-        <div className="flex flex-row items-center gap-4">
+        <div className="flex flex-col md:flex-row md:items-center gap-4">
           <h1 className="flex-grow">
             {user.name} {user.lastName}
           </h1>
-          <a href="#" className="hidden md:inline">
-            download
+          <a
+            href="#"
+            className="order-first md:order-2 self-start md:self-auto print:hidden"
+          >
+            download pdf
           </a>
-          <a href="#" className="hidden md:inline">
+          <button
+            onClick={() => window.print()}
+            className="hidden md:inline print:hidden"
+          >
             print
-          </a>
+          </button>
         </div>
 
         <p className="text-gray-500">{user.position}</p>
@@ -41,9 +48,7 @@ function App() {
           return (
             <p key={index}>
               <span>{upperCaseFirstLetter(key)}: </span>
-              <a href={value} target="_blank" rel="noopener noreferrer">
-                click
-              </a>
+              <Link type={key} value={value} />
             </p>
           )
         })}
@@ -54,13 +59,26 @@ function App() {
         heading={{ title: 'Summary of experience' }}
       />
 
-      <List
-        data={technicalSkills}
-        heading={{
-          title: 'Technology/Methodology',
-        }}
-        type="column"
-      />
+      {
+        <div>
+          <h2 className="mb-2">Technology / Methodology</h2>
+          <div className="flex flex-col gap-4">
+            {Object.entries(technicalSkills).map((category) => {
+              if (!category[1].length) return null
+              return (
+                <div>
+                  <p>{upperCaseFirstLetter(category[0])}:</p>
+                  <ul className="flex flex-wrap gap-x-4">
+                    {category[1].map((item, index) => {
+                      return <li key={index}>{upperCaseFirstLetter(item)}</li>
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      }
 
       <div>
         <h2 className="mb-2">Work experience</h2>
@@ -72,7 +90,7 @@ function App() {
                 <p className="text-gray-500 text-sm">
                   {work.date.from} - {work.date.to}
                 </p>
-                <h3 className="text-blue-700">{work.company}</h3>
+                <h3 className="text-blue-500">{work.company}</h3>
                 <p>{work.summary}</p>
 
                 <div className="p-4 flex flex-col gap-4">
@@ -108,11 +126,10 @@ function App() {
       </div>
 
       <div>
-        <h4 className="mb-2">Rest</h4>
-        {additionalInfo.map(({ title, text }) => (
-          <div>
-            <h5>{title}</h5>
-            <p>{text}</p>
+        <h2 className="mb-2">Rest</h2>
+        {additionalInfo.map((item, index) => (
+          <div key={index}>
+            <p>{item}</p>
           </div>
         ))}
       </div>

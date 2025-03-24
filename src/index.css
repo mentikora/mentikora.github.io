@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap");
-@import "tailwindcss";
+@import 'tailwindcss';
+
 @theme {
-  --font-display: "JetBrains Mono", "monospace";
+  --font-display: 'JetBrains Mono', 'monospace';
 }
 
 :root {
@@ -19,20 +19,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  @apply text-blue-500 font-medium no-underline;
-}
-a:hover {
-  @apply text-blue-600;
+*:focus {
+  @apply outline-0 shadow-md shadow-blue-500/50;
 }
 
-h1,
+a,
+button {
+  @apply font-medium underline;
+}
+button {
+  @apply cursor-pointer;
+}
+a:hover,
+button:hover {
+  @apply no-underline;
+}
+
+h1 {
+  @apply font-bold uppercase;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-bold uppercase;
+  @apply font-semibold uppercase;
 }
 
 h1 {
@@ -57,23 +69,36 @@ ul {
   @apply list-inside list-disc;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  /* place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+  a,
   button {
-    background-color: #f9f9f9;
+    @apply text-blue-500;
+  }
+  a:hover,
+  button:hover {
+    @apply text-blue-600;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #d9e2ec;
+    background-color: #1a202c;
+  }
+  a:hover,
+  button:hover {
+    color: #f6e05e;
+  }
+}
+
+@media print {
+  a::after {
+    content: ' (' attr(href) ')';
+  }
+  a::before {
+    content: '';
   }
 }
