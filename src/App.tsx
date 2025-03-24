@@ -62,7 +62,7 @@ function App() {
       {
         <div>
           <h2 className="mb-2">Technology / Methodology</h2>
-          <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {Object.entries(technicalSkills).map((category) => {
               if (!category[1].length) return null
               return (
@@ -87,7 +87,7 @@ function App() {
           {workExperience.map((work) => {
             return (
               <div key={work.company}>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-500 text-sm font-light italic">
                   {work.date.from} - {work.date.to}
                 </p>
                 <h3 className="text-blue-500">{work.company}</h3>

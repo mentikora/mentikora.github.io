@@ -17,7 +17,7 @@ export const Link = ({ type, value }: { type: string; value: string }) => {
 
   return (
     <a href={src} target="_blank" rel="noopener noreferrer">
-      click
+      {value}
     </a>
   )
 }
