@@ -14,6 +14,7 @@ function App() {
     summaryOfExperience,
     technicalSkills,
     workExperience,
+    education,
     additionalInfo,
   } = CVData
 
@@ -123,6 +124,15 @@ function App() {
             )
           })}
         </div>
+      </div>
+
+      <div>
+        <h2 className="mb-2">Education</h2>
+        {education.map((item, index) => (
+          <div key={index}>
+            <p>{item}</p>
+          </div>
+        ))}
       </div>
 
       <div>

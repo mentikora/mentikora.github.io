@@ -6,7 +6,10 @@ export const CVData = {
     connect: [
       { email: 'mentikorasan@gmail.com' },
       // { phone: '123456789' },
-      { linkedin: 'https://www.linkedin.com/in/roman-horobets-b9290366/' },
+      {
+        linkedin:
+          'https://www.linkedin.com/in/roman-horobets-b9290366/?locale=en_US',
+      },
       { github: 'https://github.com/mentikora' },
     ],
   },
@@ -191,11 +194,15 @@ export const CVData = {
       projects: [],
     },
   ],
+  education: [
+    'English - Intermediate High',
+    'Course - MongoDB Basics, 2019',
+    'Course - Cursor Education, 2016',
+    'Technical College of the National University "Lviv Polytechnic"',
+  ],
   additionalInfo: [
     'DEV Challenge, JavaScript (Hard), Finalist, 2023 - Participated in the final part',
     'DEV Challenge, JavaScript (Hard), Pre-finalist, 2022 - Participated in the pre-final part',
     'DEV Challenge, HTML/CSS, Finalist, 2018 - Participated in the final part',
-    'Course - MongoDB Basics, 2019',
-    'Course - Cursor Education, 2016',
   ],
 }
