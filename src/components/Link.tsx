@@ -13,8 +13,6 @@ export const Link = ({ type, value }: { type: string; value: string }) => {
       src = value
   }
 
-  console.log(type)
-
   return (
     <a href={src} target="_blank" rel="noopener noreferrer">
       {value}

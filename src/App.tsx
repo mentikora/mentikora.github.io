@@ -25,15 +25,9 @@ function App() {
           <h1 className="flex-grow">
             {user.name} {user.lastName}
           </h1>
-          <a
-            href="#"
-            className="order-first md:order-2 self-start md:self-auto print:hidden"
-          >
-            download pdf
-          </a>
           <button
             onClick={() => window.print()}
-            className="hidden md:inline print:hidden"
+            className="order-first md:order-2 self-start md:self-auto print:hidden"
           >
             print
           </button>
@@ -67,7 +61,7 @@ function App() {
             {Object.entries(technicalSkills).map((category) => {
               if (!category[1].length) return null
               return (
-                <div>
+                <div key={category[0]}>
                   <p>{upperCaseFirstLetter(category[0])}:</p>
                   <ul className="flex flex-wrap gap-x-4">
                     {category[1].map((item, index) => {

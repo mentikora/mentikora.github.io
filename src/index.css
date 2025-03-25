@@ -95,10 +95,8 @@ ul {
 }
 
 @media print {
-  a::after {
-    content: ' (' attr(href) ')';
-  }
-  a::before {
-    content: '';
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
 }
