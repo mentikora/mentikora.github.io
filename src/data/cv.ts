@@ -39,8 +39,8 @@ export const CVData = {
     backend: [],
     styling: [
       'CSS',
-      'SAS/LESS',
-      'BEM/ATOMIC/CSS modules',
+      'SAS / LESS',
+      'BEM / ATOMIC / CSS modules',
       'Tailwind CSS',
       'Material UI',
       'Bootstrap',

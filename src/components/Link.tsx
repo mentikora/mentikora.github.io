@@ -14,7 +14,12 @@ export const Link = ({ type, value }: { type: string; value: string }) => {
   }
 
   return (
-    <a href={src} target="_blank" rel="noopener noreferrer">
+    <a
+      href={src}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="break-all text-pretty"
+    >
       {value}
     </a>
   )

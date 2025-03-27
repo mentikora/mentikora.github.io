@@ -1,4 +1,3 @@
-import './styles.css'
 import { List } from './components'
 import { CVData } from './data/cv'
 import { upperCaseFirstLetter } from './utils'
@@ -41,7 +40,7 @@ function App() {
           const [key, value] = Object.entries(connect)[0]
 
           return (
-            <p key={index}>
+            <p key={index} className="flex flex-col md:flex-row gap-x-2">
               <span>{upperCaseFirstLetter(key)}: </span>
               <Link type={key} value={value} />
             </p>
@@ -57,7 +56,7 @@ function App() {
       {
         <div>
           <h2 className="mb-2">Technology / Methodology</h2>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {Object.entries(technicalSkills).map((category) => {
               if (!category[1].length) return null
               return (
@@ -65,7 +64,11 @@ function App() {
                   <p>{upperCaseFirstLetter(category[0])}:</p>
                   <ul className="flex flex-wrap gap-x-4">
                     {category[1].map((item, index) => {
-                      return <li key={index}>{upperCaseFirstLetter(item)}</li>
+                      return (
+                        <li key={index} className="text-pretty">
+                          {upperCaseFirstLetter(item)}
+                        </li>
+                      )
                     })}
                   </ul>
                 </div>
@@ -120,23 +123,9 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <h2 className="mb-2">Education</h2>
-        {education.map((item, index) => (
-          <div key={index}>
-            <p>{item}</p>
-          </div>
-        ))}
-      </div>
+      <List data={education} heading={{ title: 'Education' }} />
 
-      <div>
-        <h2 className="mb-2">Rest</h2>
-        {additionalInfo.map((item, index) => (
-          <div key={index}>
-            <p>{item}</p>
-          </div>
-        ))}
-      </div>
+      <List data={additionalInfo} heading={{ title: 'Rest' }} />
     </div>
   )
 }
