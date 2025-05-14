@@ -1,7 +1,6 @@
-import { List } from './components'
+import { List, Link } from '@components'
 import { CVData } from './data/cv'
-import { upperCaseFirstLetter } from './utils'
-import { Link } from './components/Link'
+import { upperCaseFirstLetter } from '@utils'
 
 function App() {
   if (!CVData) {
