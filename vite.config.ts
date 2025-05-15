@@ -23,6 +23,21 @@ export default defineConfig(() => {
       setupFiles: './src/test.setup.ts',
       mockReset: false,
       include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+      coverage: {
+        exclude: [
+          'vite.config.*', // Vite config
+          '.eslintrc.*', // ESLint config
+          '**/index.ts', // All index.ts files
+          '**/*.d.ts', // Type declarations
+          '**/types/**', // Types folder if used
+          '**/test/**', // Any helper test utils
+          'node_modules/', // Packages
+          'dist/', // Build output
+          'coverage/', // Coverage output
+          'src/data/**', // CVData
+          'src/main.tsx', // Bootstrapping for React app
+        ],
+      },
     },
     resolve: {
       alias: {
