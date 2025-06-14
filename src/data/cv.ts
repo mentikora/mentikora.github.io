@@ -66,7 +66,7 @@ export const CVData = {
       position: 'Software Engineer',
       date: {
         from: 'October 2021',
-        to: 'Present',
+        to: 'May 2025',
       },
       projects: [
         {
