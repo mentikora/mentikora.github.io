@@ -5,10 +5,8 @@ export const CVData = {
     position: 'Front-end Engineer',
     connect: [
       { email: 'mentikorasan@gmail.com' },
-      // { phone: '123456789' },
       {
-        linkedin:
-          'https://www.linkedin.com/in/roman-horobets-b9290366/?locale=en_US',
+        linkedin: 'https://www.linkedin.com/in/rhoro/',
       },
       { github: 'https://github.com/mentikora' },
     ],
@@ -20,10 +18,9 @@ export const CVData = {
     'Proficient with CSS preprocessors (SASS, SCSS), media queries, and responsive layouts for optimal performance across all devices.',
     'Unit testing experience using Jest to ensure code reliability and high test coverage.',
     'Extensive experience with version control systems (Git), following best practices such as GitFlow.',
-    'Advanced knowledge of state management tools like Redux, and React Query.',
-    'Deep understanding of modern build tools such as Webpack, Vite, and NPM for efficient development and deployment pipelines.',
+    'Advanced knowledge of state management tools like React Query, Zustand, Jotai',
+    'Deep understanding of modern build tools such as Vite, and NPM for efficient development and deployment pipelines.',
     'Design tools proficiency: Photoshop and Figma, enabling collaboration with design teams and implementing pixel-perfect interfaces.',
-    'Familiar with Progressive Web App (PWA) development, ensuring high-quality mobile-first web experiences.',
   ],
   technicalSkills: {
     frontend: [
@@ -36,7 +33,7 @@ export const CVData = {
       'Jinja2',
       'Handlebars',
     ],
-    backend: [],
+    backend: ['Next.js', 'Basics of Python3'],
     styling: [
       'CSS',
       'SAS / LESS',
@@ -45,6 +42,7 @@ export const CVData = {
       'Material UI',
       'Bootstrap',
       'Bulma',
+      'Shadcn',
     ],
     testing: ['Jest'],
     tools: ['Webpack', 'Vite'],
