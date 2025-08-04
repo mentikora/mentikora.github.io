@@ -33,7 +33,6 @@ export const CVData = {
       'Jinja2',
       'Handlebars',
     ],
-    backend: ['Next.js', 'Basics of Python3'],
     styling: [
       'CSS',
       'SAS / LESS',
@@ -48,6 +47,7 @@ export const CVData = {
     tools: ['Webpack', 'Vite'],
     'design tools': ['Photoshop', 'Figma'],
     other: ['GIT', 'GIT Flow'],
+    'Familiar / Actively learning': ['Next.js', 'Python3', 'SQL', 'Docker'],
   },
   cources: [
     {
@@ -76,8 +76,8 @@ export const CVData = {
           responsibilities: [
             'Project architecture: POC -> MVP -> Production',
             'Creation of a working version of the product based on business scenarios by TDD (test driven development)',
-            'Participated in the discussion and development of the UI/UX part of the project',
-            'Creating low fidelity wireframes in Figma',
+            'Took ownership of early-stage UI/UX planning by designing low-fidelity wireframes in Figma, helping define structure and interaction patterns',
+            'Contribute to team learning by sharing development tips, mentoring, architectural insights',
             'Conducted thorough code reviews to ensure maintainability, scalability, and adherence to coding standards',
           ],
           technologies: [
