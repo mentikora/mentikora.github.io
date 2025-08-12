@@ -47,7 +47,7 @@ export const CVData = {
     tools: ['Webpack', 'Vite'],
     'design tools': ['Photoshop', 'Figma'],
     other: ['GIT', 'GIT Flow'],
-    'Familiar / Actively learning': ['Next.js', 'Python3', 'SQL', 'Docker'],
+    'Familiar / Actively learning': ['Next.js', 'Python3', 'MySQL', 'Docker'],
   },
   cources: [
     {
