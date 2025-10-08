@@ -4,11 +4,15 @@ export const CVData = {
     lastName: 'Horobets',
     position: 'Front-end Engineer',
     connect: [
-      { email: 'mentikorasan@gmail.com' },
+      {
+        email: 'mentikorasan@gmail.com'
+      },
       {
         linkedin: 'https://www.linkedin.com/in/rhoro/',
       },
-      { github: 'https://github.com/mentikora' },
+      {
+        github: 'https://github.com/mentikora'
+      },
     ],
   },
   summaryOfExperience: [
@@ -60,6 +64,7 @@ export const CVData = {
     },
   ],
   workExperience: [
+    // vive nextjs, prisma, oct1 2025 - ...
     {
       company: 'Avenga',
       summary: '',
@@ -72,7 +77,7 @@ export const CVData = {
         {
           name: 'CDR',
           summary:
-            'Advanced medical central app for collecting, storing, and managing data from disparate sources',
+            'Advanced medical platform built for internal use, designed to securelly collect, store, and manage health data within project studies. The system streamlines data handling, and enables seamless collaboration between research teams.',
           responsibilities: [
             'Project architecture: POC -> MVP -> Production',
             'Creation of a working version of the product based on business scenarios by TDD (test driven development)',
@@ -152,7 +157,7 @@ export const CVData = {
       projects: [
         {
           name: 'Internal app',
-          summary: 'Monitoring project for TVs.',
+          summary: 'Developed a TV monitoring project featuring an information dashboard for a sales ticket call center, providing real-time tracking of performance, KPIs, and operational efficiency.',
           responsibilities: [
             'Creating UI of a monitoring system for TVs, features discussion',
           ],
@@ -171,7 +176,7 @@ export const CVData = {
       projects: [
         {
           name: 'Adster',
-          summary: 'Product related to advertising and banners',
+          summary: 'Developed an ad platform with a dashboard where users can create banners for ticket sales (train, bus, flight, etc), generate HTML code for integration, and track performance and revenue.',
           responsibilities: [
             'Built custom UI and logic for front-end',
             'Communication, discussion of new product features, and development in general',
