@@ -2,7 +2,7 @@ export const CVData = {
   user: {
     name: 'Roman',
     lastName: 'Horobets',
-    position: 'Front-end Engineer',
+    position: 'Software Engineer',
     connect: [
       {
         email: 'mentikorasan@gmail.com'
@@ -16,7 +16,7 @@ export const CVData = {
     ],
   },
   summaryOfExperience: [
-    'Senior Front-End Engineer specialized in React and modern web development practices.',
+    'Software Engineer specialized in React and modern web development practices.',
     'Skilled in building scalable, high-performance applications with a focus on user experience and maintainability.',
     'Expertise in core front-end technologies: HTML5, CSS3, JavaScript, TypeScript, and CSS frameworks like Bootstrap and Material UI.',
     'Proficient with CSS preprocessors (SASS, SCSS), media queries, and responsive layouts for optimal performance across all devices.',
@@ -30,6 +30,7 @@ export const CVData = {
     frontend: [
       'JavaScript',
       'TypeScript',
+      'Effect.ts',
       'React',
       'HTML',
       'Redux',
@@ -37,6 +38,7 @@ export const CVData = {
       'Jinja2',
       'Handlebars',
     ],
+    backend: ['Next.js', 'Prisma'], 
     styling: [
       'CSS',
       'SAS / LESS',
@@ -51,7 +53,7 @@ export const CVData = {
     tools: ['Webpack', 'Vite'],
     'design tools': ['Photoshop', 'Figma'],
     other: ['GIT', 'GIT Flow'],
-    'Familiar / Actively learning': ['Next.js', 'Python3', 'MySQL', 'Docker'],
+    'Familiar / Actively learning': ['Python3', 'MySQL', 'Docker'],
   },
   cources: [
     {
@@ -64,7 +66,60 @@ export const CVData = {
     },
   ],
   workExperience: [
-    // vive nextjs, prisma, oct1 2025 - ...
+    {
+      company: 'Onix-Systems',
+      summary: '',
+      position: 'Software Engineer',
+      date: {
+        from: 'September 2025',
+        to: 'current',
+      },
+      projects: [
+        {
+          name: 'Vive Health',
+          summary:
+            'The platform is built to digitize, streamline, and scale the operations of healthcare providers and DME suppliers.',
+          responsibilities: [
+            '',
+          ],
+          technologies: [
+            'React',
+            'NextJS',
+            'Prisma',
+          ],
+        },
+        {
+          name: 'Glow',
+          summary:
+            'Refactor/redesign the React UI end-to-end in close collaboration with design partners, aligning on UX decisions, component behavior, and visual consistency across the product.',
+          responsibilities: [
+            '',
+          ],
+          technologies: [
+            'React',
+            'NextJS',
+          ],
+        },
+        {
+          name: 'ViveHealth',
+          summary:
+            'Internal dashboard for managing plant-specific upload cycles, secure document validationg and submission, recipient workflows, automated reminders',
+          responsibilities: [
+            'Implemented features using an effect.ts-based approach for business logic and error handling',
+            'Worked with structured feature specs and implementation plans to deliver requirements in a clear, traceable way',
+            'Built integrations with Azure services for file storage, scheduled background processing, and monitoring automation',
+            'Designed database models and backend logic for upload cycles, audit logs, reminders, and status tracking',
+          ],
+          technologies: [
+            'React',
+            'NextJS',
+            'Prisma',
+            'MUI',
+            'Azure'
+          ],
+        },
+      ],
+    },
     {
       company: 'Avenga',
       summary: '',

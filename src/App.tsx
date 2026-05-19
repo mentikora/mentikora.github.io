@@ -95,7 +95,9 @@ function App() {
                     return (
                       <div key={index}>
                         <h4>{project.name}</h4>
-                        <p className="text-gray-500 mb-2">{project.summary}</p>
+                        <p className="text-gray-500 text-sm mb-2 max-w-[64ch]">
+                          {project.summary}
+                        </p>
 
                         <div className="pl-4 border-l border-gray-300">
                           <List
