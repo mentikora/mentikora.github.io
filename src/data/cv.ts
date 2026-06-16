@@ -76,16 +76,25 @@ export const CVData = {
       },
       projects: [
         {
-          name: 'Vive Health',
+          name: 'DLX',
           summary:
-            'The platform is built to digitize, streamline, and scale the operations of healthcare providers and DME suppliers.',
+            'Internal dashboard for managing plant-specific upload cycles, secure document validationg and submission, recipient workflows, automated reminders',
           responsibilities: [
-            '',
+            'AI first approach - has explicit feature specs and implementation plans under specs',
+            'Uses Prisma migrations and DAL/Effect.ts-based structure',
+            'Worked with structured feature specs and implementation plans to deliver requirements in a clear, traceable way',
+            'Built integrations with Azure services for file storage, scheduled background processing, and monitoring automation',
+            'Designed database models and backend logic for upload cycles, audit logs, reminders, and status tracking',
+            'Designed user experiences for upload cycles, document validation, submission statuses, recipient workflows, reminders, and audit history',
+            'Configured and maintained GitHub Actions workflows for automated validation, testing, building, and deployment',
           ],
           technologies: [
             'React',
+            'EffectTS',
             'NextJS',
             'Prisma',
+            'MUI',
+            'Azure'
           ],
         },
         {
@@ -93,7 +102,8 @@ export const CVData = {
           summary:
             'Refactor/redesign the React UI end-to-end in close collaboration with design partners, aligning on UX decisions, component behavior, and visual consistency across the product.',
           responsibilities: [
-            '',
+            'Built reusable component systems and multi-step policy / approval flows',
+            'Worked deeply on information-dense dashboards and operational UX',
           ],
           technologies: [
             'React',
@@ -101,21 +111,18 @@ export const CVData = {
           ],
         },
         {
-          name: 'ViveHealth',
+          name: 'Vive Health',
           summary:
-            'Internal dashboard for managing plant-specific upload cycles, secure document validationg and submission, recipient workflows, automated reminders',
+            'The platform is built to digitize, streamline, and scale the operations of healthcare providers and DME suppliers.',
           responsibilities: [
-            'Implemented features using an effect.ts-based approach for business logic and error handling',
-            'Worked with structured feature specs and implementation plans to deliver requirements in a clear, traceable way',
-            'Built integrations with Azure services for file storage, scheduled background processing, and monitoring automation',
-            'Designed database models and backend logic for upload cycles, audit logs, reminders, and status tracking',
+            'Built a multi-tenant healthcare operations platform end to end',
+            'Worked across product domains: inventory, reporting, billing, and access control',
+            'Integrated Prisma, Supabase, Stripe, SendGrid, PDF generation, and AI tooling in a single production-scale codebase',
           ],
           technologies: [
             'React',
             'NextJS',
             'Prisma',
-            'MUI',
-            'Azure'
           ],
         },
       ],
@@ -143,7 +150,7 @@ export const CVData = {
           technologies: [
             'React',
             'React Query',
-            'Material-UI',
+            'MUI',
             'Jest (react-testing-library + cucumber)',
             'Python',
           ],
@@ -168,7 +175,7 @@ export const CVData = {
             'PR reviews, mentoring new team members',
             'Discussing with the back-end team about REST API',
           ],
-          technologies: ['React', 'Redux', 'Material-UI', 'PHP'],
+          technologies: ['React', 'Redux', 'MUI', 'PHP'],
         },
         {
           name: 'Fazemodels',
@@ -178,7 +185,7 @@ export const CVData = {
             'Much attention was paid to the interface and ease of use',
             "Communication directly with the client, BA, and design team about app's UX and features",
           ],
-          technologies: ['React', 'Redux', 'Material-UI', 'NodeJS'],
+          technologies: ['React', 'Redux', 'MUI', 'NodeJS'],
         },
         {
           name: 'Schleuniger',
@@ -250,6 +257,51 @@ export const CVData = {
         to: 'December 2013',
       },
       projects: [],
+    },
+    {
+      company: 'Personal Projects',
+      position: 'Full-Stack Software Engineer',
+      date: {
+        from: '',
+        to: 'Present',
+      },
+      projects: [
+        {
+          name: 'Garage Management App',
+          summary:
+            'A non-commercial SaaS-style platform for a single automotive repair shop, created to digitize customers, vehicles, service records, repair orders, employees, and maintenance workflows while practicing business analysis, product design, and full-stack engineering through a realistic garage-management domain.',
+          responsibilities: [
+            'Owned the full product lifecycle across business analysis, domain research, product planning, UX, frontend, backend, database design, DevOps, and testing',
+          ],
+          technologies: [
+            'React',
+            'TypeScript',
+            'NextJS',
+            'MUI',
+            'Firebase',
+            'Docker',
+            'GitHub Actions',
+          ],
+        },
+        {
+          name: 'Huntdon',
+          summary:
+            'Small World of Warcraft: The Burning Crusade hunter addon built in Lua as an AI-assisted learning project.',
+          responsibilities: [
+            'Used AI-assisted development to define hunter-specific addon behavior, explore Lua and World of Warcraft UI APIs, and test iterations directly in the game client',
+          ],
+          technologies: ['Lua', 'World of Warcraft Addon API'],
+        },
+        {
+          name: 'n8n workflow',
+          summary:
+            'Small n8n automation that collects cigar review input from a form, sends it to an AI model for structured review text, processes the output with JavaScript, and stores the result in a spreadsheet.',
+          responsibilities: [
+            'Built an AI-assisted n8n workflow connecting form submission, model prompting, JavaScript transformation, and spreadsheet persistence',
+          ],
+          technologies: ['n8n', 'JavaScript', 'AI Model', 'Google Sheets'],
+        },
+      ],
     },
   ],
   education: [
