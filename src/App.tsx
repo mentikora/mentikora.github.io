@@ -1,12 +1,9 @@
-import { List, Link } from '@components'
+import { Link } from './components/Link/Link'
+import { List } from './components/List/List'
 import { CVData } from './data/cv'
-import { upperCaseFirstLetter } from '@utils'
+import { upperCaseFirstLetter } from './utils/utils'
 
 function App() {
-  if (!CVData) {
-    return <p className="text-3xl font-bold underline">No data</p>
-  }
-
   const {
     user,
     summaryOfExperience,
@@ -52,30 +49,29 @@ function App() {
         heading={{ title: 'Summary of experience' }}
       />
 
-      {
-        <div>
-          <h2 className="mb-2">Technology / Methodology</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {Object.entries(technicalSkills).map((category) => {
-              if (!category[1].length) return null
-              return (
-                <div key={category[0]}>
-                  <p>{upperCaseFirstLetter(category[0])}:</p>
-                  <ul className="flex flex-wrap gap-x-4">
-                    {category[1].map((item, index) => {
-                      return (
-                        <li key={index} className="text-pretty">
-                          {upperCaseFirstLetter(item)}
-                        </li>
-                      )
-                    })}
-                  </ul>
-                </div>
-              )
-            })}
-          </div>
+      <div>
+        <h2 className="mb-2">Technology / Methodology</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(technicalSkills).map((category) => {
+            if (!category[1].length) return null
+
+            return (
+              <div key={category[0]}>
+                <p>{upperCaseFirstLetter(category[0])}:</p>
+                <ul className="flex flex-wrap gap-x-4">
+                  {category[1].map((item, index) => {
+                    return (
+                      <li key={index} className="text-pretty">
+                        {upperCaseFirstLetter(item)}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            )
+          })}
         </div>
-      }
+      </div>
 
       <div>
         <h2 className="mb-2">Work experience</h2>

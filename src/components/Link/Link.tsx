@@ -1,9 +1,12 @@
-import { resolveLink } from '@utils'
-
 export const Link = ({ type, value }: { type: string; value: string }) => {
   if (!type || !value) return null
 
-  const href = resolveLink(type, value)
+  const href =
+    type === 'email'
+      ? `mailto:${value}`
+      : type === 'phone'
+        ? `tel:${value}`
+        : value
 
   return (
     <a

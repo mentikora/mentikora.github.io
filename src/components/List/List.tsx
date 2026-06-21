@@ -1,23 +1,3 @@
-import { createElement, FC } from 'react'
-
-type HeadingProps = {
-  as?: 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-  className?: string
-  title: string
-}
-
-const Heading: FC<HeadingProps> = ({ as = 'h2', className = '', title }) => {
-  return createElement(as, { className }, title)
-}
-
-const getListClassName = (
-  type: 'row' | 'column',
-  extra: string = '',
-): string => {
-  const base = type === 'column' ? 'flex flex-wrap gap-x-4' : ''
-  return `${base} ${extra}`.trim()
-}
-
 export const List = ({
   heading,
   data,
@@ -32,13 +12,13 @@ export const List = ({
   }
   className?: string
 }) => {
-  const listClass = getListClassName(type, className)
+  const Heading = heading.as ?? 'h2'
+  const listClass =
+    `${type === 'column' ? 'flex flex-wrap gap-x-4' : ''} ${className}`.trim()
 
   return (
     <div>
-      {heading && (
-        <Heading as={heading.as} title={heading.title} className="mb-2" />
-      )}
+      <Heading className="mb-2">{heading.title}</Heading>
       <ul className={listClass}>
         {data.length ? (
           data.map((item, index) => {

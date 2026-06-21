@@ -55,16 +55,6 @@ export const CVData = {
     other: ['GIT', 'GIT Flow'],
     'Familiar / Actively learning': ['Python3', 'MySQL', 'Docker'],
   },
-  cources: [
-    {
-      name: 'Cursor Education',
-      date: '2016',
-    },
-    {
-      name: 'MongoDB Basics',
-      date: '2019',
-    },
-  ],
   workExperience: [
     {
       company: 'Onix-Systems',

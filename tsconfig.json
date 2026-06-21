@@ -13,13 +13,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@app/*": ["src/app/*"],
-      "@utils": ["src/utils/index"],
-      "@components": ["src/components/index"]
-    }
+    "jsx": "react-jsx"
   },
   "exclude": ["node_modules"]
 }
