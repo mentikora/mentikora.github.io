@@ -18,6 +18,7 @@ export const CVData = {
   summaryOfExperience: [
     'Software Engineer specialized in React and modern web development practices.',
     'Skilled in building scalable, high-performance applications with a focus on user experience and maintainability.',
+    'Comfortable working across the stack — familiar with Python for scripting, automation, and data workflows, enabling smooth collaboration with backend teams',
     'Expertise in core front-end technologies: HTML5, CSS3, JavaScript, TypeScript, and CSS frameworks like Bootstrap and Material UI.',
     'Proficient with CSS preprocessors (SASS, SCSS), media queries, and responsive layouts for optimal performance across all devices.',
     'Unit testing experience using Jest to ensure code reliability and high test coverage.',
