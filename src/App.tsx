@@ -86,34 +86,45 @@ function App() {
                 <h3 className="text-blue-500">{work.company}</h3>
                 <p>{work.summary}</p>
 
-                <div className="p-4 flex flex-col gap-4">
-                  {work.projects.map((project, index) => {
-                    return (
-                      <div key={index}>
-                        <h4>{project.name}</h4>
-                        <p className="text-gray-500 text-sm mb-2 max-w-[64ch]">
-                          {project.summary}
-                        </p>
+                {work.technologies && (
+                  <List
+                    data={work.technologies}
+                    heading={{ title: 'Used Technologies', as: 'h5' }}
+                    type="column"
+                    className="mt-2"
+                  />
+                )}
 
-                        <div className="pl-4 border-l border-gray-300">
-                          <List
-                            data={project.responsibilities}
-                            heading={{
-                              title: 'Responsibilities',
-                              as: 'h5',
-                            }}
-                            className="mb-2"
-                          />
-                          <List
-                            data={project.technologies}
-                            heading={{ title: 'Technologies', as: 'h5' }}
-                            type="column"
-                          />
+                {work.projects && (
+                  <div className="p-4 flex flex-col gap-4">
+                    {work.projects.map((project, index) => {
+                      return (
+                        <div key={index}>
+                          <h4>{project.name}</h4>
+                          <p className="text-gray-500 text-sm mb-2 max-w-[64ch]">
+                            {project.summary}
+                          </p>
+
+                          <div className="pl-4 border-l border-gray-300">
+                            <List
+                              data={project.responsibilities}
+                              heading={{
+                                title: 'Responsibilities',
+                                as: 'h5',
+                              }}
+                              className="mb-2"
+                            />
+                            <List
+                              data={project.technologies}
+                              heading={{ title: 'Technologies', as: 'h5' }}
+                              type="column"
+                            />
+                          </div>
                         </div>
-                      </div>
-                    )
-                  })}
-                </div>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
             )
           })}

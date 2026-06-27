@@ -2,7 +2,7 @@ export const CVData = {
   user: {
     name: 'Roman',
     lastName: 'Horobets',
-    position: 'Software Engineer',
+    position: 'Senior Software Engineer | React, TypeScript, Next.js, Python | AI-assisted development & automation',
     connect: [
       {
         email: 'mentikorasan@gmail.com'
@@ -39,7 +39,7 @@ export const CVData = {
       'Jinja2',
       'Handlebars',
     ],
-    backend: ['Next.js', 'Prisma'], 
+    backend: ['Next.js', 'Prisma', 'Python3'], 
     styling: [
       'CSS',
       'SAS / LESS',
@@ -50,11 +50,11 @@ export const CVData = {
       'Bulma',
       'Shadcn',
     ],
-    testing: ['Jest'],
+    testing: ['Jest', 'Playwright'],
     tools: ['Webpack', 'Vite'],
     'design tools': ['Photoshop', 'Figma'],
     other: ['GIT', 'GIT Flow'],
-    'Familiar / Actively learning': ['Python3', 'MySQL', 'Docker'],
+    'Familiar / Actively learning': ['MySQL', 'Docker'],
   },
   workExperience: [
     {
@@ -151,92 +151,48 @@ export const CVData = {
     {
       company: 'Rolique',
       summary:
-        'Development of sites of varying complexity with different technologies (participation in more than 20 projects)',
+        'Delivered more than 20 products across marketplaces, agency platforms, industrial websites, and internal tools. Led legacy migrations and MVP architecture, built responsive interfaces and custom themes, integrated REST, Salesforce, and Twilio APIs, reviewed code, mentored engineers, and collaborated directly with clients, designers, and backend teams.',
       position: 'Software Engineer',
       date: {
         from: 'July 2017',
         to: 'October 2021',
       },
-      projects: [
-        {
-          name: 'Werksters',
-          summary: 'Marketplace for the cleaning market',
-          responsibilities: [
-            'Led the migration of a legacy project to modern technologies, and enhancing the admin dashboard',
-            'PR reviews, mentoring new team members',
-            'Discussing with the back-end team about REST API',
-          ],
-          technologies: ['React', 'Redux', 'MUI', 'PHP'],
-        },
-        {
-          name: 'Fazemodels',
-          summary: 'Service that allows agencies to market their models',
-          responsibilities: [
-            'Project architecture: MVP',
-            'Much attention was paid to the interface and ease of use',
-            "Communication directly with the client, BA, and design team about app's UX and features",
-          ],
-          technologies: ['React', 'Redux', 'MUI', 'NodeJS'],
-        },
-        {
-          name: 'Schleuniger',
-          summary:
-            'Leading solutions supplier to the wire processing and testing industry',
-          responsibilities: [
-            'Creating and implementing custom theme',
-            'Pixel perfect',
-          ],
-          technologies: ['HTML', 'SCSS', 'jQuery', 'Drupal8'],
-        },
-        {
-          name: 'Internal app',
-          summary: "App for company's recruiters",
-          responsibilities: [
-            'Project architecture: MVP',
-            'Building UI and communication with Salesforce API and Twilio',
-          ],
-          technologies: ['React Native', 'Salesforce', 'Twilio API'],
-        },
+      technologies: [
+        'React',
+        'React Native',
+        'Redux',
+        'MUI',
+        'HTML',
+        'SCSS',
+        'jQuery',
+        'PHP',
+        'NodeJS',
+        'Drupal 8',
+        'Salesforce',
+        'Twilio API',
       ],
     },
     {
       company: 'TicketsUA',
-      summary: '',
+      summary:
+        'Built a real-time TV monitoring dashboard for a ticket-sales call center, covering performance, KPI, and operational tracking while collaborating on product features.',
       position: 'Software Engineer',
       date: {
         from: 'June 2016',
         to: 'July 2017',
       },
-      projects: [
-        {
-          name: 'Internal app',
-          summary: 'Developed a TV monitoring project featuring an information dashboard for a sales ticket call center, providing real-time tracking of performance, KPIs, and operational efficiency.',
-          responsibilities: [
-            'Creating UI of a monitoring system for TVs, features discussion',
-          ],
-          technologies: ['React', 'SCSS', 'Ruby on Rails'],
-        },
-      ],
+      technologies: ['React', 'SCSS', 'Ruby on Rails'],
     },
     {
       company: 'Ki-technology',
-      summary: '',
+      summary:
+        'Developed the frontend and product logic for an advertising platform where users created ticket-sales banners, generated integration code, and tracked performance and revenue; also contributed to feature and product discussions.',
       position: 'Software Engineer',
       date: {
         from: 'December 2013',
         to: 'June 2016',
       },
-      projects: [
-        {
-          name: 'Adster',
-          summary: 'Developed an ad platform with a dashboard where users can create banners for ticket sales (train, bus, flight, etc), generate HTML code for integration, and track performance and revenue.',
-          responsibilities: [
-            'Built custom UI and logic for front-end',
-            'Communication, discussion of new product features, and development in general',
-          ],
-          technologies: ['React', 'SCSS', 'Ruby on Rails'],
-        },
-      ],
+      technologies: ['React', 'SCSS', 'Ruby on Rails'],
     },
     {
       company: 'Welldo Agency',
@@ -247,7 +203,6 @@ export const CVData = {
         from: 'April 2011',
         to: 'December 2013',
       },
-      projects: [],
     },
     {
       company: 'Personal Projects',
@@ -299,7 +254,7 @@ export const CVData = {
     'English - Intermediate High',
     'Course - MongoDB Basics, 2019',
     'Course - Cursor Education, 2016',
-    'Technical College of the National University "Lviv Polytechnic"',
+    'Technical College of the National University "Lviv Polytechnic", Associates Degree, Computer Software Engineering',
   ],
   additionalInfo: [
     'DEV Challenge, JavaScript (Hard), Finalist, 2023 - Participated in the final part',

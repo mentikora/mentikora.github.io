@@ -95,8 +95,13 @@ ul {
 }
 
 @media print {
+  @page {
+    margin: 12mm 8mm;
+  }
+
   :root {
     color: #213547;
     background-color: #ffffff;
+    font-size: 12px;
   }
 }
