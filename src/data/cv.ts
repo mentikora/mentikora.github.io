@@ -67,7 +67,31 @@ export const CVData = {
       },
       projects: [
         {
-          name: 'DLX',
+          name: 'NDA',
+          summary:
+            'Led a small engineering team on an inherited travel platform spanning five CRM applications and a separate booking and inventory backend. Worked directly with the client to set priorities and coordinated urgent fixes for sales and operations.',
+          responsibilities: [
+            'Established AI-assisted development from scratch. Set up Codex workflows and repository-specific Markdown instructions, then regularly checked them against the code and updated them as workflows changed.',
+            'Introduced shared Vitest infrastructure across five previously untested applications. Added regression coverage for pricing, room availability, and traveller data.',
+            'Investigated failures across the CRM and booking systems and delivered new features. Fixed a defect that carried outdated quote prices into bookings and built a workflow for publishing service content to customer quotes.',
+            'Tracked issues affecting sales and operations, prioritized urgent fixes with the team, and delivered hotfixes for blocked workflows.',
+            'Coordinated engineers across projects and worked directly with the client to clarify requirements, agree on priorities, and communicate progress.',
+            'Investigated AWS infrastructure costs and helped implement changes that reduced cloud spending.',
+          ],
+          technologies: [
+            'OpenAI Codex',
+            'TypeScript',
+            'React',
+            'Next.js',
+            'Node.js',
+            'PostgreSQL',
+            'Prisma',
+            'Vitest',
+            'AWS',
+          ],
+        },
+        {
+          name: 'NDA',
           summary:
             'Internal dashboard for managing plant-specific upload cycles, secure document validationg and submission, recipient workflows, automated reminders',
           responsibilities: [
@@ -89,7 +113,7 @@ export const CVData = {
           ],
         },
         {
-          name: 'Glow',
+          name: 'NDA',
           summary:
             'Refactor/redesign the React UI end-to-end in close collaboration with design partners, aligning on UX decisions, component behavior, and visual consistency across the product.',
           responsibilities: [
@@ -102,7 +126,7 @@ export const CVData = {
           ],
         },
         {
-          name: 'Vive Health',
+          name: 'NDA',
           summary:
             'The platform is built to digitize, streamline, and scale the operations of healthcare providers and DME suppliers.',
           responsibilities: [

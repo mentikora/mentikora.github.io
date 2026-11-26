@@ -21,9 +21,9 @@ export const List = ({
       <Heading className="mb-2">{heading.title}</Heading>
       <ul className={listClass}>
         {data.length ? (
-          data.map((item, index) => {
+          data.map((item) => {
             return (
-              <li key={index} className="text-pretty">
+              <li key={item} className="text-pretty">
                 {item}
               </li>
             )

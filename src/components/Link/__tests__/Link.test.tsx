@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/preact'
 import { Link } from '../Link'
 
 describe('<Link />', () => {

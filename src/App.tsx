@@ -21,6 +21,7 @@ function App() {
             {user.name} {user.lastName}
           </h1>
           <button
+            type="button"
             onClick={() => window.print()}
             className="order-first md:order-2 self-start md:self-auto print:hidden"
           >
@@ -32,11 +33,11 @@ function App() {
       </div>
 
       <div>
-        {user.connect.map((connect, index) => {
+        {user.connect.map((connect) => {
           const [key, value] = Object.entries(connect)[0]
 
           return (
-            <p key={index} className="flex flex-col md:flex-row gap-x-2">
+            <p key={value} className="flex flex-col md:flex-row gap-x-2">
               <span>{upperCaseFirstLetter(key)}: </span>
               <Link type={key} value={value} />
             </p>
@@ -59,9 +60,9 @@ function App() {
               <div key={category[0]}>
                 <p>{upperCaseFirstLetter(category[0])}:</p>
                 <ul className="flex flex-wrap gap-x-4">
-                  {category[1].map((item, index) => {
+                  {category[1].map((item) => {
                     return (
-                      <li key={index} className="text-pretty">
+                      <li key={item} className="text-pretty">
                         {upperCaseFirstLetter(item)}
                       </li>
                     )
@@ -97,9 +98,9 @@ function App() {
 
                 {work.projects && (
                   <div className="p-4 flex flex-col gap-4">
-                    {work.projects.map((project, index) => {
+                    {work.projects.map((project) => {
                       return (
-                        <div key={index}>
+                        <div key={project.summary}>
                           <h4>{project.name}</h4>
                           <p className="text-gray-500 text-sm mb-2 max-w-[64ch]">
                             {project.summary}
@@ -116,7 +117,7 @@ function App() {
                             />
                             <List
                               data={project.technologies}
-                              heading={{ title: 'Technologies', as: 'h5' }}
+                              heading={{ title: 'Tools & Technologies Used', as: 'h5' }}
                               type="column"
                             />
                           </div>

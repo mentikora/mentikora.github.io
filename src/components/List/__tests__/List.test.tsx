@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/preact'
 import { List } from '../List' // Adjust the import path as needed
 
 describe('<List />', () => {
