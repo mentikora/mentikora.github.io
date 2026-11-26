@@ -100,7 +100,7 @@ function App() {
                   <div className="p-4 flex flex-col gap-4">
                     {work.projects.map((project) => {
                       return (
-                        <div key={project.name}>
+                        <div key={project.summary}>
                           <h4>{project.name}</h4>
                           <p className="text-gray-500 text-sm mb-2 max-w-[64ch]">
                             {project.summary}
