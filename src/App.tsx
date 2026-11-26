@@ -117,7 +117,7 @@ function App() {
                             />
                             <List
                               data={project.technologies}
-                              heading={{ title: 'Technologies', as: 'h5' }}
+                              heading={{ title: 'Tools & Technologies Used', as: 'h5' }}
                               type="column"
                             />
                           </div>
