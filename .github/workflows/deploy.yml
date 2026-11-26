@@ -1,4 +1,4 @@
-name: Deploy React App to GitHub Pages
+name: Deploy CV to GitHub Pages
 
 on:
   push:
@@ -25,11 +25,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build the project
         run: npm run build

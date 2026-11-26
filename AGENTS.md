@@ -2,7 +2,7 @@
 
 ## Project Shape
 
-This is a React 19 + TypeScript + Vite CV app styled with Tailwind CSS 4.
+This is a Preact + TypeScript + Vite CV app styled with Tailwind CSS 4.
 
 - `src/App.tsx` renders the CV page.
 - `src/data/cv.ts` is the source of truth for CV content.
@@ -14,14 +14,14 @@ This is a React 19 + TypeScript + Vite CV app styled with Tailwind CSS 4.
 
 - `npm run dev` starts the local Vite dev server.
 - `npm run build` runs `tsc -b` and builds the app with Vite.
-- `npm run lint` runs ESLint across the project.
+- `npm run lint` runs Biome across the project.
 - `npm test` runs Vitest once.
 - `npm run test:watch` runs Vitest in watch mode.
 - `npm run coverage` runs Vitest with coverage.
 
 ## Coding Conventions
 
-- Use TypeScript and React function components.
+- Use TypeScript and Preact function components.
 - Prefer the existing path aliases: `@components` and `@utils`.
 - Keep CV content changes centralized in `src/data/cv.ts` unless the data shape itself must change.
 - Keep reusable components small and colocate their tests in `__tests__`.
@@ -36,4 +36,4 @@ This is a React 19 + TypeScript + Vite CV app styled with Tailwind CSS 4.
 
 ## Deployment
 
-GitHub Actions builds on Node 18 when changes land on `main`, then deploys the `dist` folder to the `gh-pages` branch.
+GitHub Actions builds on Node 24 when changes land on `main`, then deploys the `dist` folder to the `gh-pages` branch.

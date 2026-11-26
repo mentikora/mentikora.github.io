@@ -1,6 +1,6 @@
 # CV
 
-React, TypeScript, Vite, and Tailwind CV app.
+Preact, TypeScript, Vite, and Tailwind CV app.
 
 ## Commands
 
